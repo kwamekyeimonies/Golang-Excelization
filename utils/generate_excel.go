@@ -13,7 +13,7 @@ const (
 	Sheetname = "Expense Report"
 )
 
-func Generate_CSV(f *excelize.File, start, end  component.Axis) error {
+func Generate_CSV(f *excelize.File, start, end component.Axis) error {
 	var data [][]string
 
 	for i := start.Row; i <= end.Row; i++ {
